@@ -7,6 +7,8 @@ const Link = ({ active, children, onClick }) => (
     {children}
   </button>
 )
+// ここでの children は Footer.js の ALL, Active, Completed のこと.
+// Linkを抽象化しておくことで３つも同じようなものを作らずに済む.
 
 Link.propTypes = {
   active: PropTypes.bool.isRequired,
